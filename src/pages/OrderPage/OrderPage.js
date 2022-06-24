@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector} from 'react-redux';
 import { OrderItem } from '../../components/OrderItem';
 import { calcTotalPrice, enumerate } from '../../components/utils';
-import './order-page.css';
+import './OrderPage.css';
 
 export const OrderPage = () => {
     const items = useSelector((state) => state.cart.itemsInCart);

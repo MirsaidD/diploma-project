@@ -1,6 +1,6 @@
 import React from 'react';
 import { GameItem } from '../../components/GameItem';
-import './home-page.css';
+import './HomePage.css';
 
 
 

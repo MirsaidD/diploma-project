@@ -5,7 +5,7 @@ import { BiCartAlt } from "react-icons/bi";
 import { CartMenu } from "../CartMenu";
 import { ItemsInCart } from "../ItemsInCart";
 import { calcTotalPrice } from '../utils';
-import "./cart-block.css";
+import "./CartBlock.css";
 
 export const CartBlock = () => {
   const [isCartMenuVisible, setIsCartMenuVisible] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames'
-import './button.css';
+import './Button.css';
 
 export const Button = ({ onClick, type, children, size = 's' }) => {
     const btnClass = classNames({
@@ -9,14 +9,14 @@ export const Button = ({ onClick, type, children, size = 's' }) => {
         'btn--primary': type === 'primary',
         'btn--small': size === 's',
         'btn--medium': size === 'm',
-      });
+    });
 
     return (
         <button
-            className={ btnClass }
-            onClick={ onClick }
+            className={btnClass}
+            onClick={onClick}
         >
-            { children }
+            {children}
         </button>
     )
 }

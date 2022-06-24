@@ -4,9 +4,9 @@ import {
   Route,
 } from "react-router-dom";
 import { Header } from "./components/Header";
-import { HomePage } from "./pages/home-page";
-import { GamePage } from "./pages/game-page";
-import { OrderPage } from "./pages/order-page";
+import { HomePage } from "./pages/HomePage/HomePage";
+import { GamePage } from "./pages/GamePage/GamePage";
+import { OrderPage } from "./pages/OrderPage/OrderPage";
 import { Provider } from "react-redux";
 import { store } from "./store";
 

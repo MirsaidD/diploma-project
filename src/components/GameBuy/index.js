@@ -1,1 +1,1 @@
-export * from './game-buy';
+export * from './GameBuy';

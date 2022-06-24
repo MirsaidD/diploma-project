@@ -1,5 +1,5 @@
 import React from 'react';
-import './game-cover.css'
+import './GameCover.css';
 
 export const GameCover = ({ image = '' }) => {
     return (

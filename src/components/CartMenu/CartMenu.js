@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { Button } from "../Button";
 import { CartItem } from "../CartItem";
 import { calcTotalPrice } from "../utils";
-import "./cart-menu.css";
+import "./CartMenu.css";
 
 export const CartMenu = ({ onClick }) => {
   const items = useSelector((state) => state.cart.itemsInCart);
@@ -12,14 +12,14 @@ export const CartMenu = ({ onClick }) => {
       <div className="cart-menu__games-list">
         {items.length > 0
           ? items.map((game) => (
-              <CartItem
-                key={game.image}
-                image={game.image}
-                price={game.price}
-                title={game.title}
-                id={game.id}
-              />
-            ))
+            <CartItem
+              key={game.image}
+              image={game.image}
+              price={game.price}
+              title={game.title}
+              id={game.id}
+            />
+          ))
           : "Корзина пуста"}
       </div>
       {items.length > 0 ? (

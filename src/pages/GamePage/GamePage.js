@@ -1,18 +1,18 @@
 import React from "react";
-import { useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 import { GameBuy } from "../../components/GameBuy";
-import { GameCover } from "../../components/GameCover/game-cover";
+import { GameCover } from "../../components/GameCover/GameCover";
 import { GameGenre } from "../../components/GameGenre";
-import "./game-page.css";
+import "./GamePage.css";
 
 export const GamePage = () => {
   const game = useSelector(state => state.games.currentGame);
 
-  if(!game) return null
+  if (!game) return null
 
   return (
     <div className="game-page">
-      <h1 className="game-page__title">{ game.title }</h1>
+      <h1 className="game-page__title">{game.title}</h1>
       <div className="game-page__content">
         <div className="game-page__left">
           <iframe

@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button } from "../Button";
 import { setItemInCart, deleteItemFromCart } from "../../store/cart/reducer";
-import "./game-buy.css";
+import "./GameBuy.css";
 
 export const GameBuy = ({ game }) => {
   const dispatch = useDispatch();
@@ -22,7 +22,7 @@ export const GameBuy = ({ game }) => {
     <div className="game-buy">
       <span className="game-buy__price">{game.price} руб.</span>
       <Button
-        type={isItemInCart ? "secondary" : "primary" }
+        type={isItemInCart ? "secondary" : "primary"}
         onClick={handleClick}
       >
         {isItemInCart ? "Убрать из корзины" : "В Корзину"}

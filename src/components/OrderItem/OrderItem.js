@@ -1,8 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { GameCover } from '../GameCover/game-cover';
-import './order-item.css';
+import { GameCover } from '../GameCover/GameCover';
+import './OrderItem.css';
 import { deleteItemFromCart } from '../../store/cart/reducer';
 
 export const OrderItem = ({ game }) => {
@@ -13,13 +13,13 @@ export const OrderItem = ({ game }) => {
     return (
         <div className="order-item">
             <div className="order-item__cover">
-                <GameCover image={ game.image }/>
+                <GameCover image={game.image} />
             </div>
             <div className="order-item__title">
-                <span> { game.title } </span>
+                <span> {game.title} </span>
             </div>
             <div className="order-item__price">
-                <span>{ game.price } руб.</span>
+                <span>{game.price} руб.</span>
                 <AiOutlineCloseCircle
                     size={25}
                     className="cart-item__delete-icon"
