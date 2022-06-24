@@ -6,6 +6,6 @@ export const GameCover = ({ image = '' }) => {
         <div
             className="game-cover"
             style={{ backgroundImage: `url(${image})` }}
-      />
+        />
     )
 }
