@@ -1,9 +1,9 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { CartBlock } from "../CartBlock";
 import "./header.css";
 
 export const Header = () => {
+
   return (
     <div className="header">
       <div className="wrapper">
