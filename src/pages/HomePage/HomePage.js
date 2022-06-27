@@ -3,7 +3,6 @@ import { GameItem } from '../../components/GameItem';
 import './HomePage.css';
 
 
-
 const GAMES = [
     {
         image: '/game-covers/forza_5.jpeg',
@@ -85,9 +84,11 @@ const GAMES = [
     },
 ]
 
-export const HomePage = () => {
+export const HomePage = ({ searchValue }) => {
+
     return (
         <div className="home-page">
+
             {GAMES.map(game => <GameItem game={game} key={game.id} />)}
         </div>
     )
