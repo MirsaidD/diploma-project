@@ -4,20 +4,18 @@ import Search from "../Search/Search";
 // import Inputs from "../Inputs/Inputs";
 import "./Header.css";
 
-function Header({ searchValue, setSearchValue }) {
-  return (
-    <div className="header">
-      <div className="wrapper">
-        <Link to="/" className="header__store-title">
-          Game Store
-        </Link>
 
-      </div>
-      <Search searchValue={searchValue} setSearchValue={setSearchValue} />
-      <div className="wrapper header__cart-btn-wrapper">
-        <CartBlock />
-      </div>
+export const Header = ({ searchValue, setSearchValue }) => {
+  <div className="header">
+    <div className="wrapper">
+      <Link to="/" className="header__store-title">
+        Game Store
+      </Link>
+
     </div>
-  );
+    <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+    <div className="wrapper header__cart-btn-wrapper">
+      <CartBlock />
+    </div>
+  </div>
 }
-export default Header;
