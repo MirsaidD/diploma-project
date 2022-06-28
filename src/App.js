@@ -9,7 +9,7 @@ import { Provider } from "react-redux";
 import { store } from "./store";
 
 
-import { Header } from "./components/Header/Header";
+import { Header } from "./components/Header/header";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { GamePage } from "./pages/GamePage/GamePage";
 import { OrderPage } from "./pages/OrderPage/OrderPage";
