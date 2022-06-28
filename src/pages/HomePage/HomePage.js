@@ -60,7 +60,7 @@ const GAMES = [
     },
     {
         image: '/game-covers/Dota_2.png',
-        title: 'Dota 2',
+        title: 'Dota ',
         genres: ['MOBA', 'РПГ/Экшен', 'Фэнтези'],
         price: 200,
         id: 7,
