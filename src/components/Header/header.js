@@ -1,14 +1,10 @@
-
 import { Link } from "react-router-dom";
 import { CartBlock } from "../CartBlock";
 import Search from "../Search/Search";
 // import Inputs from "../Inputs/Inputs";
 import "./Header.css";
 
-export const Header = ({ searchValue, setSearchValue }) => {
-
-
-
+function Header({ searchValue, setSearchValue }) {
   return (
     <div className="header">
       <div className="wrapper">
@@ -23,4 +19,5 @@ export const Header = ({ searchValue, setSearchValue }) => {
       </div>
     </div>
   );
-};
+}
+export default Header;
