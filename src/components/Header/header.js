@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { CartBlock } from "../CartBlock";
 import Search from "../Search/Search";
 // import Inputs from "../Inputs/Inputs";
-import "./Header.css";
+
 
 
 export const Header = ({ searchValue, setSearchValue }) => {
