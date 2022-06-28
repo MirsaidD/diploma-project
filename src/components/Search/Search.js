@@ -1,19 +1,27 @@
+import { createRef, } from 'react';
 import classes from './Search.module.css'
 
 const Search = ({ searchValue, setSearchValue }) => {
+  const inputRef = createRef();
+
+  const onClickClear = () => {
+    setSearchValue('');
+    // document.querySelector('input').focus();
+
+    inputRef.current.focus();
+  }
   return (
     <div className={classes.root}>
       <input
+        ref={inputRef}
         value={searchValue}
         onChange={(event) => setSearchValue(event.target.value)}
         placeholder="Поиск игр ..."
         className={classes.input} />
 
-
-
       {searchValue && (
         <svg
-          onClick={() => setSearchValue('')}
+          onClick={onClickClear}
           className={classes.iconClear}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512  ">

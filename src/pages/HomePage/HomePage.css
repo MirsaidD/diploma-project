@@ -1,14 +1,6 @@
 .home-page {
     display: flex;
     flex-wrap: wrap;
-}
-
-@media (min-width: 620px) {
-    .home-page .backdrop {
-        display: none;
-    }
-
-    .home-page .content {
-        transform: translateX(-300px);
-    }
+    justify-content: center;
+    align-items: center;
 }
