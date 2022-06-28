@@ -94,7 +94,7 @@ export const HomePage = ({ searchValue }) => {
         return false
     }).map(game => <GameItem game={game} key={game.id} />)
     return (
-        <div className="home-page" c>
+        <div className="home-page">
             {games}
             {/* <Pagination /> */}
         </div>
