@@ -4,7 +4,7 @@ import Search from "../Search/Search";
 // import Inputs from "../Inputs/Inputs";
 import "./Header.css";
 
-function Header({ searchValue, setSearchValue }) {
+export const Header = ({ searchValue, setSearchValue }) => {
   return (
     <div className="header">
       <div className="wrapper">
@@ -17,10 +17,5 @@ function Header({ searchValue, setSearchValue }) {
       <div className="wrapper header__cart-btn-wrapper">
         <CartBlock />
       </div>
-    </div>
-  )
+    </div>)
 }
-
-
-export default Header;
-
