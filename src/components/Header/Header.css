@@ -6,6 +6,10 @@
     margin-bottom: 30px;
 }
 
+.Search {
+    padding-left: 200px;
+}
+
 .wrapper {
     display: flex;
     flex-grow: 1;

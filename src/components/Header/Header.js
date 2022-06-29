@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { CartBlock } from "../CartBlock";
 import Search from "../Search/Search";
@@ -12,8 +13,8 @@ export const Header = ({ searchValue, setSearchValue }) => {
           Game Store
         </Link>
 
+        <Search className='Search' searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
-      <Search searchValue={searchValue} setSearchValue={setSearchValue} />
       <div className="wrapper header__cart-btn-wrapper">
         <CartBlock />
       </div>
