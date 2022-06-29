@@ -63,8 +63,8 @@ const GAMES = [
         image: '/game-covers/Dota_2.png',
         title: 'Dota 2',
         genres: ['MOBA', 'РПГ/Экшен', 'Фэнтези'],
+        video: 'https://www.youtube.com/embed/cSFPIwMEq4',
         price: 4651,
-        video: '',
         id: 7,
         description: 'Dota 2 — многопользовательская командная компьютерная игра в жанре MOBA, разработанная и изданная корпорацией Valve. Игра является продолжением DotA — пользовательской карты-модификации для игры Warcraft III: Reign of Chaos и дополнения к ней Warcraft III: The Frozen Throne.'
     },
@@ -96,7 +96,7 @@ export const HomePage = ({ searchValue }) => {
     return (
         <div className="home-page">
             {games}
-            {/* <Pagination /> */}
+            {/* <Pagination />  */}
         </div>
     )
 }
