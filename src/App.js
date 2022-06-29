@@ -5,14 +5,12 @@ import {
 
 import { useState } from "react";
 
-import { Provider } from "react-redux";
-import { store } from "./store";
-
-
-import {Header} from "./components/Header/Header";
-import { HomePage } from "./pages/HomePage/HomePage";
-import { GamePage } from "./pages/GamePage/GamePage";
-import { OrderPage } from "./pages/OrderPage/OrderPage";
+import { Header } from "./components/Header/Header";
+import { HomePageDisplay } from "./components/HomePageDisplay/HomePageDisplay";
+import { GamePageDisplay } from "./components/GamePageDisplay/GamePageDisplay";
+import Auth from "./pages/AuthPage/AuthPage";
+import SignOut from "./pages/SingOut/SingOut";
+import { OrderPageDisplay } from "./components/OrderPageDisplay/OrderPageDisplay";
 // import Categories from "./components/Categories/Categories";
 
 
@@ -21,19 +19,19 @@ function App() {
   // console.log(searchValue, 'input')
 
   return (
-    <Provider store={store}>
-      <div className="App">
+    <div className="App">
 
-        <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+      <Header searchValue={searchValue} setSearchValue={setSearchValue} />
 
-        {/* <Categories /> */}
-        <Routes>
-          <Route path="/" element={<HomePage searchValue={searchValue} />} />
-          <Route path="/order" element={<OrderPage />} />
-          <Route path="/app/:title" element={<GamePage />} />
-        </Routes>
-      </div>
-    </Provider>
+      {/* <Categories /> */}
+      <Routes>
+        <Route path="/" element={<HomePageDisplay searchValue={searchValue} />} />
+        <Route path="/order" element={<OrderPageDisplay />} />
+        <Route path="/" element={<GamePageDisplay />} />
+        <Route path="/auth" element={<Auth />} />
+        <Route path="/signout" element={<SignOut />} />
+      </Routes>
+    </div>
   );
 }
 
