@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux';
 import { OrderItem } from '../../components/OrderItem';
 import { calcTotalPrice, enumerate } from '../../components/utils';
 import './OrderPageDisplay.module.css';
+import { Link } from "react-router-dom";
+import { Button } from '../Button';
 
 export const OrderPageDisplay = () => {
     const items = useSelector((state) => state.cart.itemsInCart);
@@ -21,6 +23,16 @@ export const OrderPageDisplay = () => {
                     <span>{items.length} {enumerate(items.length, ['товар', 'товара', 'товаров'])} на сумму {calcTotalPrice(items)} руб.</span>
                 </div>
             </div>
-        </div>
+            <>
+                <div >
+                    <hr />
+                    <div >
+                        <Link to="/checkout">
+                            <Button type="primary" size="m"  > Go To CheckOut</Button>
+                        </Link>
+                    </div>
+                </div>
+            </>
+        </div >
     )
 }

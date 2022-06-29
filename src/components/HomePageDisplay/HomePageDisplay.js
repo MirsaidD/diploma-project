@@ -1,6 +1,6 @@
 import React from 'react';
 import { GameItem } from '../../components/GameItem';
-// import Pagination from '../../components/Pagination/Pagination';
+import Pagination from '../../components/Pagination/Pagination';
 import './HomePageDisplay.css';
 
 
@@ -96,7 +96,7 @@ export const HomePageDisplay = ({ searchValue }) => {
     return (
         <div className="home-page__display">
             {games}
-            {/* <Pagination />  */}
+            <Pagination />
         </div>
     )
 }

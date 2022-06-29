@@ -31,8 +31,10 @@ export const CartMenu = ({ onClick }) => {
           <Button type="primary" size="m" onClick={onClick}>
             Оформить заказ
           </Button>
+
         </div>
       ) : null}
+
     </div>
   );
 };

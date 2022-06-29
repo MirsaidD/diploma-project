@@ -9,6 +9,8 @@ import { Header } from "./components/Header/Header";
 import { HomePageDisplay } from "./components/HomePageDisplay/HomePageDisplay";
 import { GamePageDisplay } from "./components/GamePageDisplay/GamePageDisplay";
 import { OrderPageDisplay } from "./components/OrderPageDisplay/OrderPageDisplay";
+import CheckoutDisplay from "./components/CheckoutDisplay/CheckoutDisplay";
+
 // import Categories from "./components/Categories/Categories";
 
 
@@ -26,6 +28,7 @@ function App() {
         <Route path="/" element={<HomePageDisplay searchValue={searchValue} />} />
         <Route path="/order" element={<OrderPageDisplay />} />
         <Route path="/app/:title" element={<GamePageDisplay />} />
+        <Route path="/checkout" element={<CheckoutDisplay />} />
       </Routes>
     </div>
   );
