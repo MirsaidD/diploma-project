@@ -8,8 +8,6 @@ import { useState } from "react";
 import { Header } from "./components/Header/Header";
 import { HomePageDisplay } from "./components/HomePageDisplay/HomePageDisplay";
 import { GamePageDisplay } from "./components/GamePageDisplay/GamePageDisplay";
-import Auth from "./pages/AuthPage/AuthPage";
-import SignOut from "./pages/SingOut/SingOut";
 import { OrderPageDisplay } from "./components/OrderPageDisplay/OrderPageDisplay";
 // import Categories from "./components/Categories/Categories";
 
@@ -27,9 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePageDisplay searchValue={searchValue} />} />
         <Route path="/order" element={<OrderPageDisplay />} />
-        <Route path="/" element={<GamePageDisplay />} />
-        <Route path="/auth" element={<Auth />} />
-        <Route path="/signout" element={<SignOut />} />
+        <Route path="/app/:title" element={<GamePageDisplay />} />
       </Routes>
     </div>
   );
