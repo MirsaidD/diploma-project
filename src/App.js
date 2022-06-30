@@ -10,6 +10,7 @@ import { HomePageDisplay } from "./components/HomePageDisplay/HomePageDisplay";
 import { GamePageDisplay } from "./components/GamePageDisplay/GamePageDisplay";
 import { OrderPageDisplay } from "./components/OrderPageDisplay/OrderPageDisplay";
 import CheckoutDisplay from "./components/CheckoutDisplay/CheckoutDisplay";
+import Footer from "./components/Footer/Footer";
 
 // import Categories from "./components/Categories/Categories";
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/app/:title" element={<GamePageDisplay />} />
         <Route path="/checkout" element={<CheckoutDisplay />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
