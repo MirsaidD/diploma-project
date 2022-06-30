@@ -1,18 +1,14 @@
-.checkoutDisplay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
 
 .desc {
     color: #ececec;
 }
 
 .mailInpit {
+    border: 1px solid rgba(0, 0, 0, 0.01);
     background-color: white;
 
+    font-weight: 400;
     width: 100%;
-    height: 20px;
-    border-radius: 50rem;
+    padding: 12px 20px;
+    border-radius: 10px;
 }
