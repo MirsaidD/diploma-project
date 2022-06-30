@@ -5,7 +5,7 @@ function CheckoutDisplay() {
     return (
         <div className={classes.checkoutDisplay}>
 
-            Страница не найдена (
+            Страница не добавлена (
             {/* <div>Введите свой Email </div>
             <div className={classes.text}>
                 <p className={classes.desc}>Покупка будет привязана к этому Email, и в будущем, владея им,
